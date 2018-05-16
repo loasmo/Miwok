@@ -90,6 +90,8 @@ public class WordAdapter extends ArrayAdapter<Word>  {
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
+        View playButton = listItemView.findViewById(R.id.play_button);
+        playButton.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.
